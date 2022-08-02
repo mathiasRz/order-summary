@@ -1,0 +1,129 @@
+$paleblue: hsl(225, 100%, 94%);
+$brightblue: hsl(245, 75%, 52%);
+$verypaleblue: hsl(225, 100%, 98%);
+$desaturatedblue: hsl(224, 23%, 55%);
+$darkblue: hsl(223, 47%, 23%);
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    max-height: 900px;
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+    background-color: $paleblue;
+
+    .card {
+        max-width: 450px;
+        margin: 50px auto;
+        box-shadow: 0px 5px 15px #858383e3;
+        border-radius: 20px;
+        background-color: white;
+
+        .img {
+            img {
+                border-radius: 20px 20px 0px 0px;
+            }
+        }
+
+        .order {
+            width: 80%;
+            margin: auto;
+
+            p {
+                color: $desaturatedblue
+            }
+        }
+
+        .plan {
+            display: grid;
+            grid-auto-flow: column;
+            height: 100px;
+            width: 80%;
+            margin: auto;
+            background-color: $verypaleblue;
+            border-radius: 20px;
+
+            img {
+                margin: auto;
+            }
+
+            .text {
+                text-align: left;
+
+                h2 {
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    margin-top: 0px;
+                    color: $desaturatedblue
+                }
+            }
+
+            a {
+                margin: auto;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
+
+        .button {
+            border: 0px;
+            width: 80%;
+            height: 40px;
+            margin: 20px auto;
+            border-radius: 10px;
+            background-color: $brightblue;
+            box-shadow: 0px 5px 10px $desaturatedblue;
+
+            a {
+                color: $paleblue;
+                font-weight: 900;
+                text-decoration: none;
+            }
+        }
+
+        .button:hover {
+            filter: hue-rotate(15deg);
+        }
+
+        .cancel {
+
+            a,
+            :active {
+                text-decoration: none;
+                font-weight: 700;
+                color: $desaturatedblue;
+            }
+
+            a:hover {
+                color: black;
+            }
+        }
+
+        .attribution {
+            margin-top: 20px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        background-image: url("/images/pattern-background-mobile.svg");
+
+        .card {
+            width: 375px;
+
+            .img {
+                img {
+                    width: 375px;
+                }
+            }
+        }
+    }
+}

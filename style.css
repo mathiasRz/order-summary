@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  max-height: 900px;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-color: #e0e8ff;
+}
+
+body .card {
+  max-width: 450px;
+  margin: 50px auto;
+  -webkit-box-shadow: 0px 5px 15px #858383e3;
+          box-shadow: 0px 5px 15px #858383e3;
+  border-radius: 20px;
+  background-color: white;
+}
+
+body .card .img img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+body .card .order {
+  width: 80%;
+  margin: auto;
+}
+
+body .card .order p {
+  color: #7280a7;
+}
+
+body .card .plan {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  height: 100px;
+  width: 80%;
+  margin: auto;
+  background-color: #f5f7ff;
+  border-radius: 20px;
+}
+
+body .card .plan img {
+  margin: auto;
+}
+
+body .card .plan .text {
+  text-align: left;
+}
+
+body .card .plan .text h2 {
+  margin-bottom: 5px;
+}
+
+body .card .plan .text p {
+  margin-top: 0px;
+  color: #7280a7;
+}
+
+body .card .plan a {
+  margin: auto;
+}
+
+body .card .plan a:hover {
+  text-decoration: none;
+}
+
+body .card .button {
+  border: 0px;
+  width: 80%;
+  height: 40px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-color: #3829e0;
+  -webkit-box-shadow: 0px 5px 10px #7280a7;
+          box-shadow: 0px 5px 10px #7280a7;
+}
+
+body .card .button a {
+  color: #e0e8ff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+body .card .button:hover {
+  -webkit-filter: hue-rotate(15deg);
+          filter: hue-rotate(15deg);
+}
+
+body .card .cancel a,
+body .card .cancel :active {
+  text-decoration: none;
+  font-weight: 700;
+  color: #7280a7;
+}
+
+body .card .cancel a:hover {
+  color: black;
+}
+
+body .card .attribution {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("/images/pattern-background-mobile.svg");
+  }
+  body .card {
+    width: 375px;
+  }
+  body .card .img img {
+    width: 375px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
